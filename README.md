@@ -5,36 +5,25 @@ A full-stack URL Shortening web application built using the MERN Stack (MongoDB,
 📌 Features
 
 🔗 Convert long URLs into short links
-
 ⚡ Fast redirection to original URL
-
 🗄️ MongoDB database storage
-
 🌐 REST API based backend
-
 💻 Full-stack MERN architecture
 
 📈 Scalable backend design
 
 🛠️ Tech Stack
-Frontend
-
+Frontend:
 React.js
-
 Axios
-
 Tailwind CSS (if used)
 
-Backend
-
+Backend:
 Node.js
-
 Express.js
 
-Database
-
+Database:
 MongoDB
-
 Mongoose
 
 📂 Project Structure
@@ -76,13 +65,9 @@ npm start
 🚀 Usage
 
 Open the application in browser
-
 Enter a long URL
-
 Click Shorten
-
 Get a shortened link
-
 Use the short link for redirection
 
 📸 Example
@@ -94,15 +79,10 @@ http://localhost:5000/abc123
 📈 Learning Outcomes
 
 Built REST APIs using Express
-
 Integrated MongoDB for URL mapping
-
 Implemented unique short link generation
-
 Connected frontend with backend
-
 Designed scalable full-stack architecture
-
 QR Code generation
 
 Deployment
