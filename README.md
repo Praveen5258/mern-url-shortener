@@ -1,119 +1,64 @@
-# 🔗 MERN URL Shortener
+# MERN URL Shortener
 
-![MERN](https://img.shields.io/badge/Stack-MERN-green)
-![Node](https://img.shields.io/badge/Backend-Node.js-success)
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
-![License](https://img.shields.io/badge/Status-Active-success)
+A full-stack URL shortener built with React, Express, MongoDB, and Node.js.
 
-🚀 A full-stack URL Shortening web application built using the **MERN Stack** that converts long URLs into short, shareable links.
+## Project Structure
 
----
-
-## ✨ Features
-
-✅ Convert long URLs into short links  
-⚡ Fast redirection to original URL  
-🗄️ MongoDB database storage  
-🌐 REST API based backend  
-💻 Full-stack MERN architecture  
-📈 Scalable backend design  
-
----
-
-## 🛠️ Tech Stack
-
-### 🎨 Frontend
-🟦 React.js  
-🔗 Axios  
-🎨 Tailwind CSS  
-
-### ⚙️ Backend
-🟩 Node.js  
-🚏 Express.js  
-
-### 🗄️ Database
-🍃 MongoDB  
-📦 Mongoose  
-
----
-
-## 📂 Project Structure
-
+```text
 mern-url-shortener/
-│
-├── frontend/
 ├── backend/
-├── package.json
-└── README.md
+└── frontend/
+    └── vite_project/
+```
 
----
+## Features
 
-## ⚙️ Installation & Setup
+- Shortens long URLs into shareable links
+- Redirects short links to the original destination
+- Stores links and click counts in MongoDB
+- Uses a React frontend with a Node/Express backend
 
-### 📥 1. Clone Repository
+## Setup
 
-git clone https://github.com/Praveen5258/mern-url-shortener.git  
-cd mern-url-shortener  
+### Backend
 
----
+```bash
+cd backend
+npm install
+```
 
-### 🔧 2. Setup Backend
+Create `backend/.env`:
 
-cd backend  
-npm install  
+```env
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+BASE_URL=http://localhost:5000
+FRONTEND_URL=http://localhost:5173
+```
 
-Create a `.env` file inside backend:
+Run the backend:
 
-MONGO_URI=your_mongodb_connection_string  
-PORT=5000  
-BASE_URL=http://localhost:5000  
+```bash
+npm run dev
+```
 
-Run backend:
+### Frontend
 
-npm start  
+```bash
+cd frontend/vite_project
+npm install
+```
 
----
+Create `frontend/vite_project/.env`:
 
-### 💻 3. Setup Frontend
+```env
+VITE_API_BASE_URL=http://localhost:5000
+```
 
-cd frontend  
-npm install  
-npm start  
+Run the frontend:
 
----
+```bash
+npm run dev
+```
 
-## 🚀 Usage
-
-1️⃣ Open the application in browser  
-2️⃣ Enter a long URL  
-3️⃣ Click **Shorten**  
-4️⃣ Get a shortened link  
-5️⃣ Use the short link for redirection  
-
----
-
-## 📸 Example
-
-🔗 Original URL  
-https://example.com/very-long-url  
-
-⚡ Short URL  
-http://localhost:5000/abc123  
-
----
-
-## 📈 Learning Outcomes
-
-🧠 Built REST APIs using Express  
-🍃 Integrated MongoDB for URL mapping  
-🔑 Implemented unique short link generation  
-🔄 Connected frontend with backend  
-🏗️ Designed scalable full-stack architecture  
-
----
-
-## 👨‍💻 Author
-
-**Praveen Biradar**  
-🎓 IIT BHU – Electronics & Communication Engineering  
+Open `http://localhost:5173/`.
